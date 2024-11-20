@@ -1,0 +1,9 @@
+name: codi-link 
+
+services:
+    codi:
+        restart: unless-stopped
+        container_name: codi-link
+        build: .
+        ports:
+        - "8080:80"
